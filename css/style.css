@@ -10,17 +10,22 @@
 
 body {
     overflow: hidden;
+    background: radial-gradient(#f9d349, #d57e12);
+}
+
+.dark {
+    background: #262626;
 }
 
 .main-width {
      max-width: 90vw;
      margin: 0 auto;
 }
+
 .hero {
     height: 100vh;
     width: 100vw;
     min-height: 100vh;
-    background: radial-gradient(#f9d349,40%, #d57e12) ;
     position: relative;
 }
 
@@ -67,13 +72,13 @@ nav ul li.active a {
 nav ul li.btn a {
     background: transparent;
     color: white;
-    border: 1px solid #f5dca8;
+    border: 1px solid white;
     padding: 9px 20px;
     border-radius: 15px;
     line-height: 1.4;
     font-size: 14px;
     font-weight: 500;
-    margin-left: 150px;
+    margin-left: 10px;
 }
 nav ul li.btn:hover a {
     border: 1px solid white;
@@ -82,8 +87,28 @@ nav ul li.btn:hover a {
     transition: .8s;
 }
 
+nav ul li.btn-dark a {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 9px 20px;
+    border-radius: 15px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 170px;
+    cursor: pointer;
+}
+nav ul li.btn-dark:hover a {
+    border: 1px solid white;
+    color: black;
+    background: white;
+    transition: .8s;
+}
+
 .content {
     padding: 30px;
+    
 }
 
 .content .main-text {
@@ -93,7 +118,7 @@ nav ul li.btn:hover a {
 }
 
 .content .main-text h6 {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     color: white;
     margin-bottom: 20px;
@@ -137,14 +162,14 @@ nav ul li.btn:hover a {
 
 .content .main-text a:hover {
     transform: scale(1.2);
-    border: 1px solid #f5dca8;
+    border: 1px solid white;
     background: transparent;
     color: white;
     transition: .4s;
 }
 
 .content .main-text a.cta {
-    border: 1px solid #f5dca8;
+    border: 1px solid white;
     color: white;
     background: transparent;
     margin-left: 20px;
@@ -164,13 +189,12 @@ nav ul li.btn:hover a {
 .content .social {
     position: relative;
     z-index: 2;
-    margin-top: 140px;
-    padding-bottom: 40px;
+    margin-top: 270px;
 }
 
 .content .social a {
     display: inline-block;
-    color: #f5dcac;
+    color: white;
     margin-right: 25px;
     font-size: 24px;
 }
@@ -184,14 +208,12 @@ nav ul li.btn:hover a {
 .image {
     position: absolute;
     width: 100vw;
-    height: 85vh;
+    height: 80vh;
     bottom: 0;
     right: 0;
     text-align: right;
 }
 
 .image img {
-    height: 85vh;
-
-    
+    width: 70vw;   
 }
